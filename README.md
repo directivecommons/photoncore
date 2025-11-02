@@ -115,41 +115,19 @@ Because optical inference is too important to be locked in corporate R&D labs. I
 ### 🔬 For researchers:
 
 1. **Read the whitepaper** → Identify holes, improvements, or extensions
-2. **Build simulations** → Validate our performance claims (we'll release reference code Q1 2026)
+2. **Build simulations** → Validate our performance claims
 3. **Run experiments** → Try wavelength multiplexing on your D2NN setup
 4. **Publish & cite** → If you extend these ideas, reference this spec + improve it
 
-### 🔧 For builders:
-
-1. **Design OptiDev-64** → Use our reference BOM (coming Q2 2026) to build a research kit
-2. **Try alternative materials** → Metasurfaces? Volume holograms? Liquid crystal layers?
-3. **Optimize for your app** → Edge inference? LLM front-ends? Vision chips?
-4. **Share results** → Open-source your designs and measurements
-
 ### 💼 For companies:
 
-1. **Pilot integration** → Could PhotonCore work as a GPU front-end in your product?
-2. **Fab partnerships** → Do you manufacture photonic components? Let's talk about wafer-scale D2NNs
-3. **Licensing** → The spec is free; we're open to reference design partnerships
-4. **Acquisition/investment** → Contact us if you're serious about productizing this
+1. **Licensing** → The spec is free
 
 ### 💬 Join the discussion:
 
 - **GitHub Issues**: Technical questions, design critiques, collaboration proposals
 - **Email**: directivecommons@protonmail.com
 - **Discord** (coming soon): Real-time discussion for active contributors
-
----
-
-## Timeline
-
-| Phase                | Deliverable                     | Target Date | Status                          |
-| -------------------- | ------------------------------- | ----------- | ------------------------------- |
-| **Spec Release**     | This whitepaper                 | Nov 2025    | ✅ Done                          |
-| **Simulation Code**  | Python/PyTorch optical layers   | Q1 2026     | 🔄 In progress                   |
-| **Reference Design** | OptiDev-64 BOM + assembly guide | Q2 2026     | 📝 Planned                       |
-| **Academic Pilots**  | 3-5 university partnerships     | Q3 2026     | 🤝 Seeking collaborators         |
-| **First Silicon**    | Integrated chiplet demo         | 2027+       | 🔮 Requires funding/partnerships |
 
 ---
 
