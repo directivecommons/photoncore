@@ -103,32 +103,6 @@ A research-backed proposal for building practical optical inference accelerators
 **Why open?**  
 Because optical inference is too important to be locked in corporate R&D labs. If D2NNs can deliver 100× efficiency for AI workloads, we need 100 research groups validating and improving the approach—not 3 well-funded startups racing in secrecy.
 
-**Our other work:**
-
-- [ARIA-OS](https://github.com/directivecommons/aria-os): Modular cognitive architecture for humanoid robots
-- [HG-FCCA](https://github.com/directivecommons/hg-fcca): Field-composite compute for real-time robot control
-
----
-
-## How to Engage
-
-### 🔬 For researchers:
-
-1. **Read the whitepaper** → Identify holes, improvements, or extensions
-2. **Build simulations** → Validate our performance claims
-3. **Run experiments** → Try wavelength multiplexing on your D2NN setup
-4. **Publish & cite** → If you extend these ideas, reference this spec + improve it
-
-### 💼 For companies:
-
-1. **Licensing** → The spec is free
-
-### 💬 Join the discussion:
-
-- **GitHub Issues**: Technical questions, design critiques, collaboration proposals
-- **Email**: directivecommons@protonmail.com
-- **Discord** (coming soon): Real-time discussion for active contributors
-
 ---
 
 ## The Bottom Line
@@ -145,35 +119,25 @@ Let's make optical inference real.
 ## License
 
 - **Specification**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (freely implementable)
-- **Reference Designs** (future): Apache 2.0 (when released)
-
-You are free to use, modify, and commercialize implementations based on this specification. We only ask that you:
-
-1. Attribute Directive Commons in derivative works
-2. Share improvements back to the community under the same license
-
----
-
-## Citation
-
-If you use PhotonCore concepts in research or products, please cite:
-
-```bibtex
-@techreport{photocore2025,
-  title = {PhotonCore: Wavelength-Multiplexed Diffractive Neural Networks for General AI Inference},
-  author = {{Directive Commons}},
-  year = {2025},
-  month = {November},
-  institution = {Directive Commons Open Innovation Initiative},
-  url = {https://github.com/directivecommons/photocore},
-  note = {Version 1.0}
-}
-```
-
----
-
+You are free to use, modify, and commercialize implementations based on this specification. 
 **Ready to dive in?** Read the full whitepaper in the repository.
 
 ---
 
 *"Let light do the math, let silicon do the logic."*
+
+---
+
+## ⚠️ Disclaimer
+
+This document represents a **conceptual exploration** published by Directive Commons. It is a thought experiment and architectural vision, not a research proposal, peer-reviewed work, or implementation plan.
+
+**Purpose:** To explore possibilities, inspire research directions, and establish conceptual frameworks.
+
+**Nature:** Speculative technical architecture combining real physics with ambitious integration. Individual components may reference demonstrated technologies; overall systems are exploratory and face significant challenges.
+
+**Use:** Released under CC BY 4.0. Provided "as is" without warranty. No liability assumed for actions based on these concepts.
+
+Think of this as "architectural fiction" — like concept cars that explore ideas which might influence future designs, even if never built as shown.
+
+---
