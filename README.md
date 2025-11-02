@@ -1,2 +1,201 @@
-# photoncore
-PhotonCore is a hybrid optical-electronic architecture where light performs the heavy computational lifting (linear transformations via diffractive neural networks) while compact digital logic handles nonlinearity, control, and memory operations.
+# PhotonCore: Wavelength-Multiplexed Optical Inference
+
+> **What if your next AI inference chip consumed 100× less energy and computed with light instead of transistors?**
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Status: Research Proposal](https://img.shields.io/badge/Status-Research%20Proposal-blue.svg)]()
+[![TRL: 3-4](https://img.shields.io/badge/TRL-3--4-orange.svg)]()
+
+**A Directive Commons Open Innovation Initiative**
+
+---
+
+## Why You Should Read This
+
+### If you're an AI researcher...
+
+You're spending 60-80% of your inference compute budget on **matrix multiplications**. PhotonCore proposes doing those operations *optically*—at 1/100th the energy and 10× faster. The whitepaper shows how diffractive neural networks can be productized for real AI workloads (LLMs, vision, multi-modal), not just academic demos.
+
+**Key question answered:** *Can we make optical computing general-purpose enough to matter for transformers, not just CNNs?*
+
+### If you're a hardware engineer...
+
+You know Moore's Law is ending and datacenter cooling costs are exploding. This architecture uses **free-space diffractive optics + wavelength multiplexing** to create 6-12 virtual compute layers from 2-3 physical components. It's simpler to fab than silicon photonics, more energy-efficient than analog in-memory compute, and actually handles multi-modal data.
+
+**Key question answered:** *How do we scale optical neural networks beyond toy problems without hitting the thermal/alignment wall?*
+
+### If you're building edge AI products...
+
+Your robots, AR glasses, and drones need <5 W inference but still want GPT-4 quality. PhotonCore proposes a **hybrid optical-electronic architecture** where light does the heavy math and compact ASICs handle control. Think of it as a "tensor core for photons"—specialized, efficient, complementary to your existing processors.
+
+**Key question answered:** *Can we get datacenter-class inference into battery-powered devices without waiting for 1nm transistors?*
+
+### If you're a PhD student / postdoc...
+
+This is a **roadmap, not a product**. The whitepaper synthesizes 5+ years of diffractive neural network research and proposes extensions (multi-wavelength, multi-modal, hybrid training) that are publishable *now*. We're calling for collaborators to validate, critique, and build upon these ideas.
+
+**Key question answered:** *What's the next frontier in optical computing after D2NNs proved the concept?*
+
+### If you're an investor / exec...
+
+AI inference will consume **1-2% of global electricity by 2030**. Every major tech company is hunting for 10-100× efficiency gains. This document lays out a credible technical path using proven physics (not vaporware), with a pragmatic 3-phase commercialization strategy starting at $8-12k research kits and scaling to <$500 chiplets.
+
+**Key question answered:** *Is optical inference real this time, or just another overhyped photonics pitch?*
+
+---
+
+## What's Inside
+
+📄 **[Full Whitepaper](docs/PhotonCore_Whitepaper.md)** (25-min read)  
+A research-backed proposal for building practical optical inference accelerators using wavelength-multiplexed diffractive neural networks.
+
+**Core ideas:**
+
+- Use RGB light to create 3× parallel compute channels through a single optical stack
+- Solve chromatic aberration with multi-level diffractive structures + digital correction
+- Train with hybrid in-silico/in-situ methods (no need to backpropagate light)
+- Target 50-100× energy efficiency vs. GPUs for matrix-heavy workloads
+
+**Not your typical "optical computing will save the world" hype:**
+
+- All performance claims tied to published research (D2NNs validated at UCLA, MIT, Stanford)
+- Honest about limitations (6-8 bit precision, chromatic aberration, fabrication challenges)
+- Clear Technology Readiness Level (TRL 3-4: validated in lab, not production-ready)
+- No claims of having built working hardware—this is a *proposal* for the community
+
+---
+
+## Quick Comparison
+
+| Feature              | GPUs (H100)        | Silicon Photonics     | **PhotonCore**                  |
+| -------------------- | ------------------ | --------------------- | ------------------------------- |
+| **Energy/MAC**       | 15-30 pJ           | 5-10 pJ               | **1-2 pJ**                      |
+| **Latency**          | 50 µs/layer        | 20 µs/layer           | **3-6 µs/layer**                |
+| **Form Factor**      | Datacenter card    | On-chip waveguides    | **Free-space module**           |
+| **Multi-wavelength** | N/A                | Single-λ coherent     | **3-4 channels (RGB+IR)**       |
+| **Reconfigurable**   | Fully programmable | Static or slow tuning | **Hybrid: digital fine-tuning** |
+| **TRL**              | 9 (production)     | 5-6 (demos)           | **3-4 (concept validated)**     |
+
+---
+
+## What This Is (And Isn't)
+
+### ✅ This is:
+
+- An **open architecture specification** for optical inference systems
+- A **research roadmap** synthesizing proven D2NN concepts with new extensions
+- A **call for collaboration** from academics, hardware builders, and AI labs
+- A credible **technical alternative** to purely electronic or silicon photonic approaches
+
+### ❌ This is not:
+
+- A commercial product or startup pitch
+- A promise that optical computing will replace GPUs everywhere
+- A claim of having working prototypes (we're at TRL 3-4, not TRL 7-9)
+- Investment advice or a guarantee of technical feasibility
+
+---
+
+## Who's Behind This?
+
+**Directive Commons** is an open innovation initiative releasing specifications for foundational technologies that we believe should be developed transparently. We publish under pseudonyms to focus attention on ideas, not individuals.
+
+**Why open?**  
+Because optical inference is too important to be locked in corporate R&D labs. If D2NNs can deliver 100× efficiency for AI workloads, we need 100 research groups validating and improving the approach—not 3 well-funded startups racing in secrecy.
+
+**Our other work:**
+
+- [ARIA-OS](https://github.com/directivecommons/aria-os): Modular cognitive architecture for humanoid robots
+- [HG-FCCA](https://github.com/directivecommons/hg-fcca): Field-composite compute for real-time robot control
+
+---
+
+## How to Engage
+
+### 🔬 For researchers:
+
+1. **Read the whitepaper** → Identify holes, improvements, or extensions
+2. **Build simulations** → Validate our performance claims (we'll release reference code Q1 2026)
+3. **Run experiments** → Try wavelength multiplexing on your D2NN setup
+4. **Publish & cite** → If you extend these ideas, reference this spec + improve it
+
+### 🔧 For builders:
+
+1. **Design OptiDev-64** → Use our reference BOM (coming Q2 2026) to build a research kit
+2. **Try alternative materials** → Metasurfaces? Volume holograms? Liquid crystal layers?
+3. **Optimize for your app** → Edge inference? LLM front-ends? Vision chips?
+4. **Share results** → Open-source your designs and measurements
+
+### 💼 For companies:
+
+1. **Pilot integration** → Could PhotonCore work as a GPU front-end in your product?
+2. **Fab partnerships** → Do you manufacture photonic components? Let's talk about wafer-scale D2NNs
+3. **Licensing** → The spec is free; we're open to reference design partnerships
+4. **Acquisition/investment** → Contact us if you're serious about productizing this
+
+### 💬 Join the discussion:
+
+- **GitHub Issues**: Technical questions, design critiques, collaboration proposals
+- **Email**: directivecommons@protonmail.com
+- **Discord** (coming soon): Real-time discussion for active contributors
+
+---
+
+## Timeline
+
+| Phase                | Deliverable                     | Target Date | Status                          |
+| -------------------- | ------------------------------- | ----------- | ------------------------------- |
+| **Spec Release**     | This whitepaper                 | Nov 2025    | ✅ Done                          |
+| **Simulation Code**  | Python/PyTorch optical layers   | Q1 2026     | 🔄 In progress                   |
+| **Reference Design** | OptiDev-64 BOM + assembly guide | Q2 2026     | 📝 Planned                       |
+| **Academic Pilots**  | 3-5 university partnerships     | Q3 2026     | 🤝 Seeking collaborators         |
+| **First Silicon**    | Integrated chiplet demo         | 2027+       | 🔮 Requires funding/partnerships |
+
+---
+
+## The Bottom Line
+
+**AI inference is about to consume as much electricity as entire countries.**  
+**Optical computing offers a 10-100× efficiency advantage for the workloads that matter most.**  
+**The physics is proven. The engineering is tractable. The question is: who will build it?**
+
+This whitepaper is our answer to that question. Read it. Critique it. Build on it.  
+Let's make optical inference real.
+
+---
+
+## License
+
+- **Specification**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (freely implementable)
+- **Reference Designs** (future): Apache 2.0 (when released)
+
+You are free to use, modify, and commercialize implementations based on this specification. We only ask that you:
+
+1. Attribute Directive Commons in derivative works
+2. Share improvements back to the community under the same license
+
+---
+
+## Citation
+
+If you use PhotonCore concepts in research or products, please cite:
+
+```bibtex
+@techreport{photocore2025,
+  title = {PhotonCore: Wavelength-Multiplexed Diffractive Neural Networks for General AI Inference},
+  author = {{Directive Commons}},
+  year = {2025},
+  month = {November},
+  institution = {Directive Commons Open Innovation Initiative},
+  url = {https://github.com/directivecommons/photocore},
+  note = {Version 1.0}
+}
+```
+
+---
+
+**Ready to dive in?** Read the full whitepaper in the repository.
+
+---
+
+*"Let light do the math, let silicon do the logic."*
